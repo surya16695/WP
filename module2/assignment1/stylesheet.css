@@ -1,0 +1,49 @@
+body {
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: "Palatino", serif;
+    /* background: blue; */
+}
+.content {
+    float: bottom;
+    /* border-left: 1px solid black; */
+}
+.photo {
+    float: left;
+    width: 18%;
+    padding: 2%;
+    /* background-color: blue;     */
+    /* border: 1px solid black; */
+    
+}
+
+.cv {
+    float: right;
+    width: 73.65%;
+    padding: 2%;
+    /* background-color: green;     */
+    border-left: 1px solid black;
+    /* border-right: 1px solid black; */
+
+}
+.name {
+    /* float: top; */
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    /* background-color: red;     */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: larger;
+}
+
+h2 {
+    width: 400;
+    height: 30px;
+    background-color: #C2C2C2;
+    text-align: left;
+}
+
+#contact {
+    width: 230px;
+}
