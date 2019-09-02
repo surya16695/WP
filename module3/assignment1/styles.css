@@ -1,0 +1,36 @@
+.headingmine {
+    /* font-family: "Palatino", serif; */
+    padding-left: 30%;
+    /* background: red; */
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid black;
+}
+
+#contact {
+    /* font-family: 'Palatino',serif; */
+}
+
+.container {
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 1px solid black;
+}
+
+.photo {
+    /* background: red; */
+    border-right: 1px solid black;
+    
+}
+
+#pic {
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+
+.content {
+    /* background: blue; */
+}
+
+h2 {
+    background: lightblue;
+    
+}
