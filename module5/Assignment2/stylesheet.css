@@ -1,0 +1,33 @@
+.container {
+    background: lightblue;
+}
+
+.ques {
+    background: white;
+}
+
+.q1 {
+    background: white;
+    padding: 20px;
+}
+
+.q2 {
+    background: white;
+    padding: 20px;
+    border-top: 1px dashed grey;
+}
+
+.reset {
+    text-align: right;
+    
+}
+
+.headingmine {
+    padding-left: 120px;
+    background:salmon;
+    color: white;
+}
+
+.h1 {
+
+}

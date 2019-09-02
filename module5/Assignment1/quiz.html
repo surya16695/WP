@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learn By Doing</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <br>
+        <div class="row headingmine">
+            <h1>Learn by Doing</h1>
+        </div>
+            
+        <br><br><br><br><br><br>
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-sm">
+                    <div class="q1">
+                            <br>
+                            <p>Each computer has a built-in instruction set that it knows how to execute by design.</p>
+                            <!-- <br> -->
+                            <button type="button" class="btn-warning" id="hint" onclick="q1(3)">hint</button>
+                            <!-- <div class="row"><br></div> -->
+                            <p id="hintbox"></p>
+                            <div class="radio">
+                                <br>
+                                <label><input type="radio" name="optradio" id="q1True" onclick="q1(1)" >True</label>
+                                <br>
+                            </div>              
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" id="q1False" onclick="q1(2)">False</label>
+                            </div>
+                            <br>
+                            <p  id="q1C">
+                            <p  id="q1I">
+                            </p>
+                            <script>
+                                function q1(num) {
+                                    
+                                    switch(num) {
+                                        case 1:
+                                        document.getElementById("q1C").innerHTML+='<div id="q1Correct" class="alert alert-success alert-dismissable fade show" role="alert">'+'<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="q1(4)"><span aria-hidden="true">&times;</span>'+'</button>'+'Correct!'+'</div>';
+                                        document.getElementById("q1False").disabled=true;
+                                        break;
+                                        case 2:
+                                        document.getElementById("q1I").innerHTML+='<div id="q1Incorrect" class="alert alert-danger alert-dismissable">'+'<button type="button" class="close" data-dismiss="alert" onclick="q1(5)">&times;'+'</button>'+'Incorrect. Each computer has a set of primitive instructions that is wired to execute. We call this the instruction set of the computer.'+'</div>';
+                                        document.getElementById("q1True").disabled=true;
+                                        break;
+                                        case 3:
+                                        document.getElementById("hintbox").innerHTML+='<div id="q1Hint" class="alert alert-warning alert-dismissable">'+
+                                        '<button type="button" class="close" data-dismiss="alert" onclick="q1(6)">&times;</button>'+
+                                        'Recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the intention of solving a given problem"'+
+                                        '</div>';
+                                        case 4:
+                                        document.getElementById("q1Correct").outerHTML="";
+                                        break;
+                                        case 5:
+                                        document.getElementById("q1Incorrect").outerHTML="";
+                                        break;
+                                        case 6:
+                                        document.getElementById("q1Hint").outerHTML="";
+                                        break;
+                                    }
+                                }
+                            </script>
+                                    
+                        </div>                
+                        <div class="q2">
+                                <br>
+                                <p>A computer stores all the information in 0's and 1's.</p>
+                                <!-- <br> -->
+                                <button type="button" class="btn-warning" onclick="q2(3)">hint</button>
+                                <!-- <div class="row"><br></div> -->
+                                <p id="hintbox1"></p>
+                                <div class="radio">
+                                    <br>
+                                    <label><input type="radio" name="optradio" id="q2True" onclick="q2(1)" >True</label>
+                                    <br>
+                                </div>              
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" id="q2False" onclick="q2(2)">False</label>
+                                </div>
+                                <br>
+                                <p  id="q2C">
+                                <p  id="q2I">
+                                </p>
+                                <script>
+                                    function q2(num) {
+                                        
+                                        switch(num) {
+                                            case 1:
+                                            document.getElementById("q2C").innerHTML+='<div id="q2Correct" class="alert alert-success alert-dismissable fade show" role="alert">'+'<button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="q2(4)">'+'<span aria-hidden="true">&times;</span>'+'</button>'+'Correct!'+'</div>';
+                                            document.getElementById("q2False").disabled=true;
+                                            break;
+                                            case 2:
+                                            document.getElementById("q2I").innerHTML+='<div id="q2Incorrect" class="alert alert-danger alert-dismissable">'+'<button type="button" class="close" data-dismiss="alert" onclick="q2(5)">&times;'+'</button>'+'Incorrect. Remember the memory storage methods!'+'</div>';
+                                            document.getElementById("q2True").disabled=true;
+                                            break;
+                                            case 3:
+                                            document.getElementById("hintbox1").innerHTML+='<div id="q2Hint" class="alert alert-warning alert-dismissable">'+
+                                            '<button type="button" class="close" data-dismiss="alert" onclick="q2(6)">&times;</button>'+
+                                            'Recall the reason we understood binary numbers.'
+                                            +'</div>';
+                                            break;
+                                            case 4:
+                                            document.getElementById("q2Correct").outerHTML="";
+                                            break;
+                                            case 5:
+                                            document.getElementById("q2Incorrect").outerHTML="";
+                                            break;
+                                            case 6:
+                                            document.getElementById("q2Hint").outerHTML="";
+                                            break;
+                                        }
+                                    }
+                                </script>
+                                        
+                            </div>                               
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-sm reset">
+                <button type="button" onclick="location.reload('true')">Reset Activity</button>
+            </div>
+        </div>
+        <div>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
