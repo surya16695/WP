@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <!-- <div class="key form-group"> -->
+                    <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                    <b>&nbsp;Name:</b>
+                    <input  type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" [(ngModel)] = "username">
+                    <div class="clearfix"></div>
+                <!-- </div> -->
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback" style="color:red;" class="alert alert-danger">
+                    <div *ngIf="f.username.errors.required">User Name is required</div>
+                </div>
+                <!-- <div class="key form-group"> -->
+                    <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                    <b>&nbsp;Email:</b>
+                    <input type="text" formControlName="email" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" [(ngModel)] = "email"/>
+                    <div class="clearfix"></div>
+                <!-- </div> -->
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback" style="color:red;" class="alert alert-danger">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div>
+                <!-- <div class="key form-group"> -->
+                    <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                    <b>&nbsp;Phone Number:</b>
+                    <input  type="text" formControlName="phonenumber" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phonenumber.errors }" [(ngModel)] = "phonenumber">
+                    <div class="clearfix"></div>
+                <!-- </div> -->
+                <div *ngIf="submitted && f.phonenumber.errors" class="invalid-feedback" style="color:red;" class="alert alert-danger">
+                    <div *ngIf="f.phonenumber.errors.required">Phone Number is required</div>
+                    <div *ngIf="f.phonenumber.errors.minlength">Phone Number must be atleast 10 digitd</div>
+                </div>
+                <!-- <div class="key form-group"> -->
+                    <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+                    <b>&nbsp;Address:</b>
+                    <input  type="text" formControlName="address" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address.errors }" [(ngModel)] = "address">
+                    <div class="clearfix"></div>
+                <!-- </div> -->
+                <div *ngIf="submitted && f.address.errors" class="invalid-feedback" style="color:red;" class="alert alert-danger">
+                    <div *ngIf="f.address.errors.required">Address is required</div>
+                    <div *ngIf="f.address.errors.minlength">Address must be atleast 20 characters</div>
+                </div>
+            <input type="submit" value="Pay Now" class="btn">
+        </form>
+        </div>
+        <!-- <div *ngIf = "!flag" class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i>Name</label>
+                    {{username}}
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    {{email}}
+                    <label for="adr"><i class="fa fa-address-card-o"></i>Shipping Address</label>
+                    {{address}}
+                    <label for="adr"><i class="glyphicon glyphicon-earphone"></i>Phone Number</label>
+                    {{number}}
+                </div>
+            </div>
+                <input type="submit" value="Pay Now" class="btn">
+            </form>
+            </div>
+    </div>  -->
+    <div class="col-25 jjj">
+        <div class="container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>{{quan}}</b></span></h4>
+        <div *ngFor = "let in of arr">
+        <p>{{in.name}}<span class="price">{{in.quantity}}&nbsp;*&nbsp;{{in.price}}&nbsp;=&nbsp;<i class="fa fa-inr" aria-hidden="true"></i>{{in.quantity*in.price}}</span></p>
+        
+        </div>
+        <hr>
+        <p>Total <span class="price" style="color:black"><i class="fa fa-inr" aria-hidden="true"></i><b>{{total}}</b></span></p>
+        </div>
+    </div>
+</div>

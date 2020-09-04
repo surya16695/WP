@@ -1,0 +1,52 @@
+<div class="nav-top">
+  <nav class="navbar navbar-default"> 
+  </nav>
+   <div class="cart">
+      <span routerLink = "/cart" class="fa fa-shopping-cart my-cart-icon" style="position: absolute; background-color: inherit; z-index: 999;"><span class="badge badge-notify my-cart-badge">
+          <a routerLink = "/cart">{{len}}</a>
+      </span></span>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="banner-top">
+    <div class="container">
+      <h3 >User Details</h3>
+      <h4><a routerLink = "/login">Login</a><label>/</label>User Details</h4>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+    <div class="login">
+      <div class="main-agileits">
+          <div class="form-w3agile form1">
+            <h3>Details</h3>
+            <!-- <form action="#" method="post"> -->
+              <!-- <div class="key"> -->
+                <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                Username: {{user.name}}
+                <div class="clearfix"></div><br>
+              <!-- </div> -->
+              <!-- <div class="key"> -->
+                <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                Phone Number: {{user.phone}}
+                <div class="clearfix"></div><br>
+              <!-- </div> -->
+              <!-- <div class="key"> -->
+                <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                Email ID: {{user.email}}
+                <div class="clearfix"></div><br>
+              <!-- </div> -->
+              <!-- <div class="key"> -->
+                <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+                Address: {{user.address}}
+                <div class="clearfix"></div><br>
+              <!-- </div> -->
+              <!-- <div class="key"> -->
+                <b><i class="fa fa-inr" aria-hidden="true"></i></b>
+                &nbsp;&nbsp;Balance: {{user.balance}}
+                <div class="clearfix"></div><br>
+              <!-- </div> -->
+            <!-- </form> -->
+          </div>
+          
+        </div>
+      </div>

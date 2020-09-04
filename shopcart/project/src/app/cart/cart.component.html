@@ -1,0 +1,58 @@
+<div class="modal-content">
+    <!-- <div class="modal-header"> -->
+        <button routerLink="/main" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+            <span class="glyphicon glyphicon-shopping-cart">
+            </span>
+            My Cart
+        </h4>
+    <!-- </div> -->
+    <div class="modal-body" *ngFor = "let in of temp1,index as i">
+        <table class="table table-hover table-responsive" id="my-cart-table">
+            <tbody>
+            <tr title="summary 2">
+                <td><img src = "./assets/{{in.image}}" height="50" width="20"></td>
+                <td>{{in.name}}</td>
+                <td title="Unit Price" style="float:right;">
+                    <button (click) = "decrease(i)">-</button>&nbsp;{{in.quantity}}&nbsp;<button (click) = "increase(i)" [disabled] ="hehe">+</button>
+                    <span>&nbsp;*&nbsp;</span>{{in.price}}
+                    &nbsp;<span>&nbsp;=&nbsp;</span><i class="fa fa-inr" aria-hidden="true"></i>{{in.quantity*in.price}}
+                </td>
+                
+                <td title="Remove from Cart" class="text-center" style="width: 30px;">
+                    <button class="btn btn-xs btn-danger my-product-remove" (click) = "del(i)">
+                        X
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-body">
+    <table class="table table-hover table-responsive" id="my-cart-table">
+    <tbody>
+    <div *ngIf = "total<=0">
+    <div class="alert alert-danger" role="alert" id="my-cart-empty-message">Your cart is empty</div>
+    </div>
+    <div *ngIf = "total>0">
+    <tr title="summary 2">
+        <td><b>Total</b></td>
+        <td title="Unit Price" style="float:right;">
+            <span><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;<b>{{total}}</b></span>
+        </td>
+        <td title="Remove from Cart" class="text-center" style="width: 30px;">
+            <button style="display:none;">
+            </button>
+        </td>
+    </tr>
+    </div>
+    </tbody>
+    </table>
+    </div>
+    <div class="add">
+            <button routerLink="/main"class="my-cart-btn my-cart-b ">Go Back</button>
+        <button routerLink="/checkout" (click) = "out()" class="my-cart-btn my-cart-b ">Checkout</button>
+    </div>
+</div>

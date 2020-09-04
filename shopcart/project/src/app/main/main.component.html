@@ -1,0 +1,73 @@
+<div class="nav-top">
+  <nav class="navbar navbar-default"> 
+  </nav>
+  <div class="cart">
+      <span routerLink = "/cart" class="fa fa-shopping-cart my-cart-icon" style="position: absolute; background-color: inherit; z-index: 999;"><span class="badge badge-notify my-cart-badge">
+          <a routerLink = "/cart">{{len}}</a>
+      </span></span>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="banner-top">
+    <div class="search-form">
+      <form class = "example" action="#" method="post">
+        <!-- <input type="text" placeholder="Search.." name="search"> -->
+        <input  type="text" name = "search" [(ngModel)]="filterName" placeholder="Search for your product..">
+         <!-- <div *ngFor = 'let name of prods | filterBy:filterName index as i'>
+      <nav>
+        <img src="assests/1.jpeg" style = "width : 120px; height: 200px">  <a class = "b" routerLink = "/productdetails/{{i}}">{{name}}</a>
+        <hr>
+    </nav>
+    </div> -->
+      </form>
+    </div>
+</div>
+<div class="content-top">
+  <div class="spec ">
+    <div class="ser-t">
+      <b></b>
+      <span><i></i></span>
+      <b class="line"></b>
+    </div>
+  </div>
+  <div *ngIf = "filterName">
+        <div class="com-w31">
+          <div *ngFor = 'let in of prods | filterByName:filterName' class="col-md-3 m-wthree">
+            <div class="col-m">
+                <a routerLink = "/productdetails/{{in}}" data-toggle="modal" data-target="#myModal1" class="offer-img">
+                  <img routerLink = "/productdetails/{{in}}" src="assets/{{tem[in].image}}" class="img-responsive" alt="" style = "height: 200px;width: 100px">
+                </a>
+              <div class="mid-1">
+                  <h6>{{tem[in].name}}</h6>
+              </div>
+            </div>
+    </div>
+  
+  </div>
+</div>
+<div *ngIf = "!filterName">
+    <div class="com-w31">
+      <div *ngFor = 'let prod of prods; index as i' class="col-md-3 m-wthree tttt">
+        <div class="col-m ggg">
+            <a routerLink = "/productdetails/{{i}}" data-toggle="modal" data-target="#myModal1" class="offer-img">
+              <img routerLink = "/productdetails/{{i}}" src="assets/{{tem[i].image}}" class="img-responsive" alt="" style = "height: 200px;width: 100px">
+            </a>
+          <div class="mid-1">
+              <h6>{{tem[i].name}}</h6>
+          </div>
+        </div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- <div class = "a" style= "padding-left: 500px;">
+    <input  [(ngModel)]="filterName" placeholder="Search for your product..">
+    </div>
+    <h2 style = "text-align: center">Grab your product</h2>
+    <div *ngFor = 'let name of prods | filterBy:filterName index as i'>
+      <nav>
+        <img src="assests/1.jpeg" style = "width : 120px; height: 200px">  <a class = "b" routerLink = "/productdetails/{{i}}">{{name}}</a>
+        <hr>
+    </nav>
+    </div> -->

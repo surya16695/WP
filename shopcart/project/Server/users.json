@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "name": "Surya",
+            "email":"abc@gmail.com",
+            "pwd": "123456789",
+            "phone": 9912800589,
+            "address": "125478963",
+            "balance":50,
+            "prod": ["Apple","Oneplus"],
+            "quantity": [10,10],
+            "price":[2500,2500]
+        },
+        {
+            "name": "Navya",
+            "email":"abc@gmail.com",
+            "pwd": "123456789",
+            "phone": 9912800589,
+            "address": "125478963",
+            "balance":50,
+            "prod": ["Apple","Oneplus"],
+            "quantity": [10,10],
+            "price":[2500,2500]
+        },
+        {
+            "name": "Anuhya",
+            "email":"abc@gmail.com",
+            "pwd": "123456789",
+            "phone": 9912800589,
+            "address": "125478963",
+            "balance":50,
+            "prod": ["Apple","Oneplus"],
+            "quantity": [10,10],
+            "price":[2500,2500]
+        }
+    ]
+}

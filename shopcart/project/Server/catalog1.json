@@ -1,0 +1,113 @@
+{
+	"products": [{
+            "name": "Samsung Galaxy S9 (Midnight Black)",
+            "price": 64000,
+			"description": "Memory, Storage & SIM: 4GB RAM | 64GB storage expandable upto 400GB | Dual sim (nano+nano) with dual standby (4G+4G)",
+            "quantity":20,
+            "image":"1.jpg",
+            "reviews": [{ 
+                "body": "nice edge display",
+                "rating": 4
+            }]
+		},
+        {
+            "name": "OnePlus 6T (Mirror Black)",
+            "price": 37999,
+			"description": "Memory, Storage & SIM: 6GB RAM | 128GB storage | Dual nano SIM with dual standby (4G+4G)",
+            "quantity":10,
+            "image":"2.jpg",
+            "reviews": [{ 
+                "body": "This phone is awesome",
+                "rating": 5
+            }] 
+        },
+        {
+            "name": "Apple iPhone Xs Max (Gold)",
+            "price": 144000,
+			"description": "iOs v12 operating system with 2.39GHz Apple A12 Bionic hexa core processor, 4GB RAM, 512GB internal memory expandable and and dual SIM dual-standby (4G+4G)",
+            "quantity":30,
+            "image":"3.jpg",
+            "reviews": [{ 
+                "body": "overpriced",
+                "rating": 4
+            }]
+        },
+        {
+            "name": "Pixel 3XL, Blue",
+            "price": 72000,
+			"description": "Memory, Storage and SIM: 4GB RAM | 64GB internal memory expandable up to 64GB | Single SIM",
+            "quantity":40,
+            "image":"4.jpg",
+            "reviews": [{ 
+                "body": "software is the best",
+                "rating": 4.5
+            }]
+        },
+        {
+            "name": "Samsung Galaxy Note 9 (Midnight Black) ",
+            "price": 68000,
+			"description": "Memory, Storage & SIM: 6GB RAM | 128GB storage expandable up to 512GB | Dual SIM with dual standby (4G+4G)",
+            "quantity":40,
+            "image":"5.jpg",
+            "reviews": [{ 
+                "body": "big display with edge s pen is awesome",
+                "rating": 4.5
+            }]
+        },
+        {
+            "name": "Honor View20 (Blue)",
+            "price": 38000,
+			"description": "Memory, Storage & SIM: 6GB RAM | 128GB storage | Dual nano SIM with dual standby (4G+4G)",
+            "quantity":40,
+            "image":"6.jpg",
+            "reviews": [{ 
+                "body": "This phone is from future",
+                "rating": 4.5
+            }]
+        },
+        {
+            "name": "Nokia 8.1 (Blue)",
+            "price": 30000,
+			"description": "Memory, Storage and SIM: 6GB RAM | 128GB internal memory expandable up to 400GB | Dual SIM (nano+nano) dual-standby (4G+4G)",
+            "quantity":40,
+            "image":"7.jpg",
+            "reviews": [{ 
+                "body": "best budget phone",
+                "rating": 4.5
+            }]
+        },
+        {
+            "name": "Oppo R17 (Ambient Blue, 8GB RAM, 128 GB Storage)",
+            "price": 32000,
+			"description": "Memory, Storage & SIM: 8GB RAM | 128GB storage | Dual nano SIM with dual standby (4G+4G)",
+            "quantity":40,
+            "image":"8.jpg",
+            "reviews": [{ 
+                "body": "notch display is crazy",
+                "rating": 4
+            }]
+        },
+        {
+            "name": "OPPO Find X (Bordeaux Red, 8GB RAM, 256GB Storage)",
+            "price": 72000,
+			"description": "Memory, Storage and SIM: 8GB 256GB | Dual SIM (nano+nano) dual-standby (4G+4G)",
+            "quantity":40,
+            "image":"9.jpg",
+            "reviews": [{ 
+                "body": "no bezels display is awesome",
+                "rating": 4.5
+            }]
+        },
+        {
+            "name": "BlackBerry Key2 (Black, 6GB RAM, 64GB Storage)",
+            "price": 43000,
+			"description": "Memory, Storage & SIM: 6GB RAM | 64GB storage expandable up to 256GB | Dual nano hybrid SIM with dual standby (4G+4G)",
+            "quantity":40,
+            "image":"10.jpg",
+            "reviews": [{ 
+                "body": "sleek design",
+                "rating": 4.5
+            }]
+        }
+	]
+}

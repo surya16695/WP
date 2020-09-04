@@ -1,0 +1,43 @@
+{
+	"products": [{
+            "name": "Samsung Galaxy s9+,4GB + 128GB, Blue",
+            "price": 64000,
+			"description": "Super AMOLED Display with 1440 x 2960 (QHD) Resolution",
+            "quantity":20,
+            "reviews": [{ 
+                "body": "nice edge display",
+                "rating": 4
+            }]
+		},
+        {
+            "name": "ONEPLUS 6T 128, 6GB + 128GB, mirror black",
+            "price": 37999,
+			"description": "AMOLED Display with 1440 x 2960 (FHD+) Resolution",
+            "quantity":10,
+            "reviews": [{ 
+                "body": "This phone is awesome",
+                "rating": 5
+            }] 
+        },
+        {
+            "name": "Iphone XI XS, 6GB + 128GB, Blue",
+            "price": 20000,
+			"description": "Super AMOLED Display with 1242 x 2688 (QHD) Resolution",
+            "quantity":30,
+            "reviews": [{ 
+                "body": "overpriced",
+                "rating": 4
+            }]
+        },
+        {
+            "name": "Pixel 3XL, 4GB RAM, Blue",
+            "price": 72000,
+			"description": "Super AMOLED Display with 1440 x 2960 (QHD) Resolution",
+            "quantity":40,
+            "reviews": [{ 
+                "body": "software is the best",
+                "rating": 5
+            }]
+        }
+	]
+}

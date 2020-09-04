@@ -1,0 +1,28 @@
+{
+	"products": [{
+            "name": "Redmi",
+            "price": 6400,
+			"description": "Porable Bomb | Explodes at your disposal | Happy Diwali",
+            "quantity":20,
+            "image":"11.jpg",
+            "reviews": [{ 
+                "body": "Hot as f...",
+                "rating": 2.5
+            }]
+        },
+        {
+            "name": "iPhone XR",
+            "price": 10,
+			"description": "Memory, Storage & SIM: 0GB RAM | 64GB | No sim with no standby (Modi G+ Modi G) | Send a kidney",
+            "quantity":1000,
+            "image":"12.jpg",
+            "reviews": [{ 
+                "body": "Waste display",
+                "rating": 3
+            },{ 
+                "body": "Worst phone of 2018",
+                "rating": 2
+            }]
+		}
+	]
+}
